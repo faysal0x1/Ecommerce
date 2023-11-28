@@ -49,14 +49,14 @@
 						<div class="menu-title">Category</div>
 					</a>
 					<ul>
-						@if(Auth::user()->can('category.list'))
+						{{-- @if(Auth::user()->can('category.list')) --}}
 						<li> <a href="{{ route('all.category') }}"><i class="bx bx-right-arrow-alt"></i>All Category</a>
 						</li>
-						@endif
-						@if(Auth::user()->can('category.add'))
+						{{-- @endif --}}
+						{{-- @if(Auth::user()->can('category.add')) --}}
 						<li> <a href="{{ route('add.category') }}"><i class="bx bx-right-arrow-alt"></i>Add Category</a>
 						</li>
-						@endif
+						{{-- @endif --}}
 						 
 					</ul>
 				</li>
@@ -69,14 +69,14 @@
 						<div class="menu-title">SubCategory</div>
 					</a>
 					<ul>
-						@if(Auth::user()->can('subcategory.list'))
+						{{-- @if(Auth::user()->can('subcategory.list')) --}}
 						<li> <a href="{{ route('all.subcategory') }}"><i class="bx bx-right-arrow-alt"></i>All SubCategory</a>
 						</li>
-						@endif
-						@if(Auth::user()->can('subcategory.add'))
+						{{-- @endif --}}
+						{{-- @if(Auth::user()->can('subcategory.add')) --}}
 						<li> <a href="{{ route('add.subcategory') }}"><i class="bx bx-right-arrow-alt"></i>Add SubCategory</a>
 						</li>
-						@endif
+						{{-- @endif --}}
 						 
 					</ul>
 				</li>
