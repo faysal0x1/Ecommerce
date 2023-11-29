@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-node@master
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+      - name: File Permissions
+        run: find . -type f -exec chmod 644 {} \; && find . -type d -exec chmod 755 {} \;
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
       - name: 📂 Sync files
